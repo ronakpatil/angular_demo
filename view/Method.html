@@ -1,0 +1,44 @@
+<!--<!DOCTYPE html >-->
+<!--<script src = "../references/angular.js"></script>-->
+<!--&lt;!&ndash;<script src = "../angular-animate.js"></script>&ndash;&gt;-->
+<!--<script src="Page3Script.js"></script>-->
+<!--&lt;!&ndash;<link rel="stylesheet" href="page3style.css">&ndash;&gt;-->
+<!--&lt;!&ndash;<html lang="en">&ndash;&gt;-->
+<!--&lt;!&ndash;<head>&ndash;&gt;-->
+    <!--&lt;!&ndash;<meta charset="UTF-8">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<title>Page3</title>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;</head>&ndash;&gt;-->
+<!--&lt;!&ndash;<body ng-app="mymodule3">&ndash;&gt;-->
+<div>
+    <h1> Function to count number of likes and dislikes </h1>
+    <hr/>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th><center>Skills</center></th>
+                    <th><center>Likes</center></th>
+                    <th><center>Dislikes</center></th>
+                    <th><center>Like/Dislike</center></th>
+                </tr>
+            </thead>
+                <tbody>
+            <tr ng-repeat="technologies in technologies | orderBy:'name'">
+                <td><center>{{technologies.name | uppercase}}</center></td>
+                <td><center>{{technologies.likes}}</center></td>
+                <td><center>{{technologies.dislikes}}</center></td>
+                <td><center>
+                    <input type="button" value="Like" ng-click="increamentLikes(technologies)">
+                    <input type="button" value="Dislike" ng-click="increamentDislikes(technologies)">
+                    </center>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--</body>-->
+<!--</html>-->

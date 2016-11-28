@@ -1,0 +1,33 @@
+<div>
+<h1> Bootstrap Form </h1>
+<hr/>
+<div class = "container">
+<button class="btn btn-default" ng-click="toggleModal()">Open Modal</button>
+<modal title="Demo form" visible="showModel">
+	<form role="form" name="empform" novalidate>
+		<div class="form-group">
+			<label for="email">Email Address</label>
+			<input type="email" name="email" class="form-control" ng-model="eMail" placeholder="Enter email" required />
+			<span style="color: red" ng-show="empform.email.$dirty && empform.email.$invalid">
+				<span ng-show="empform.email.$error.required">Email is required</span>
+			</span>
+		</div>
+		<div class="form-group">
+			<label for="email">First Name</label>
+			<input name="fname" class="form-control" ng-model="fName" placeholder="Enter First Name" required />
+			<span style="color: red" ng-show="empform.fname.$dirty && empform.fname.$invalid">
+				<span ng-show="empform.fname.$error.required">fisrt name is required</span>
+			</span>
+		</div>
+		<button ng-click = "reset()" class="btn btn-default">Reset</button>
+		<button ng-disabled = "empform.email.$dirty && empform.email.$invalid ||
+								empform.fname.$dirty && empform.fname.$invalid"
+								 ng-click = "submit()" class="btn btn-default">Submit
+		</button>
+	</form>
+	</form>
+</modal>
+</div>
+<hr/>
+
+</div>

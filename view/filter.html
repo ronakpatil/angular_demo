@@ -1,0 +1,39 @@
+<!--<!DOCTYPE html>-->
+<!--<script src = "../references/angular.js"></script>-->
+<!--<script src="filterScript.js"></script>-->
+<!--<script src="filter.js"></script>-->
+<!--<html lang="en" ng-app="mymod">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<div>
+<h1> Custom filter to classify gender and salary </h1>
+<hr/>
+</div>
+</hr>
+<caption>Custom Filter (Gender and Salary level columns are filtered) </caption>
+<table border="1">
+        <thead>
+        <tr>
+            <th><center>Name</center></th>
+            <th><center>Gender Code</center></th>
+            <th><center>Gender</center></th>
+            <th><center>Salary</center></th>
+            <th><center>Salary levels</center></th>
+        </tr>
+        </thead>
+    <tbody>
+    <tr ng-repeat="employee in employees">
+        <td><center>{{employee.name}}</center></td>
+        <td><center>{{employee.gender }}</center></td>
+        <td><center>{{employee.gender | genderFilter }}</center></td>
+        <td><center>{{employee.salary}}</center></td>
+        <td><center>{{employee.salary | salaryFilter }}</center></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<!--</body>-->
+<!--</html>-->

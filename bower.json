@@ -1,0 +1,23 @@
+{
+  "name": "angular_demo_apps",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ronak Patil <ronakpatil9@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "angular-mocks": "^1.5.8",
+    "angular": "^1.5.8"
+  }
+}

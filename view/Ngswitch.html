@@ -1,0 +1,49 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" ng-app>-->
+<!--<script src = "../references/angular.js"></script>-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Title</title>-->
+<!--</head>-->
+<div>
+<h1> Dropdown menu to choose items (ng-Switch / ng-options) </h1>
+<hr/>
+<div>
+Favorite Car:
+<select ng-model="carvalues">
+    <option value="Audi">Audi</option>
+    <option value="bmw">BMW</option>
+    <option value="Skoda">Skoda</option>
+    <option value="Tata">Tata</option>
+    <option value="Suzuki">Ciaz</option>
+</select>
+
+<div ng-switch="carvalues">
+    <div ng-switch-when="Audi">
+        <h2>Audi</h2>
+        <h4>....</h4>
+    </div>
+    <div ng-switch-when="BMW">
+        <h2>BMW</h2>
+        <h4>Bavarian Motor Works</h4>
+    </div>
+    <div ng-switch-when="Skoda">
+        <h2>Skoda</h2>
+        <h4>Simply Clever</h4>
+    </div>
+    <div ng-switch-when="Tata">
+        <h2>TATA</h2>
+        <h4>Tata motor vehicles</h4>
+    </div>
+    <div ng-switch-when="Suzuki">
+        <h2>Suzuki</h2>
+        <h4>Make the way!</h4>
+    </div>
+    <div ng-switch-default="" -when="BMW">
+        <h2>BMW</h2>
+        <h4>Bavarian Motor Works</h4>
+    </div>
+</div>
+</div>
+</div>
+<!--</html>-->
