@@ -1,13 +1,12 @@
-
 /**
  * Created by ronakp on 16-09-2016.
  */
 
 // angular.module("module13",[])
-oneAppmod.controller('sidController',function($scope) {
+oneAppmod.controller('sidController', function($scope) {
     $scope.name = "Chrome";
-    $scope.reverseName = function(){
-         //debugger
+    $scope.reverseName = function() {
+        //debugger
         $scope.name = $scope.name.split('').reverse().join('');
     };
     //debugger

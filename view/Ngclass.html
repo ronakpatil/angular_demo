@@ -4,24 +4,24 @@
 <!--<script src="script14.js"></script>-->
 <!--<html lang="en" ng-app="module14">-->
 <!--<head>-->
-    <!--<meta charset="UTF-8">-->
-    <!--<title>Page14</title>-->
+<!--<meta charset="UTF-8">-->
+<!--<title>Page14</title>-->
 <!--</head>-->
 <!--<body ng-controller="ngclassController">-->
 <div>
-<h1> Different ways to apply style to elements using ng-class </h1>
-<hr/>
-<p> By specifying style name </p>
-<h2><i ng-class="[style2,style3]" ng-repeat="item in items">
+    <h1> Different ways to apply style to elements using ng-class </h1>
+    <hr/>
+    <p> By specifying style name </p>
+    <h2><i ng-class="[style2,style3]" ng-repeat="item in items">
     {{item.title}}
 </i></h2>
-<hr/>
-	<p> By specifying item.type value </p>
+    <hr/>
+    <p> By specifying item.type value </p>
     <h3 ng-class="{'blue':item.type===1,'underline':item.type===3,'chartruse':item.type===2}" ng-repeat="item in items">
         {{item.title}}
     </h3>
-<hr/>
-	<p> By specifying item.type value (Please look at the code to check the difference) </p>
+    <hr/>
+    <p> By specifying item.type value (Please look at the code to check the difference) </p>
     <h2 ng-class="{1:'blue',2:'orange',3:'chartruse'}[item.type]" ng-repeat="item in items">
         {{item.title}}
     </h2>

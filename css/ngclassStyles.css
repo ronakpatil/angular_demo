@@ -1,15 +1,19 @@
-.blue{
+.blue {
     color: blue;
 }
-.chartreuse{
+
+.chartreuse {
     color: chartreuse;
 }
-.orange{
-    color:orange;
+
+.orange {
+    color: orange;
 }
-.underline{
-text-decoration: underline;
+
+.underline {
+    text-decoration: underline;
 }
-b{
+
+b {
     margin: 5px;
 }

@@ -3,13 +3,13 @@
  */
 
 // angular.module("module12",[])
-oneAppmod.controller('validationController',function ($scope) {
-$scope.mydata = {val:"Jake"}
-$scope.$watch('mydata.val',function (newval) {
-    $scope.mydata.toolong=newval.length > 15
+oneAppmod.controller('validationController', function($scope) {
+    $scope.mydata = { val: "Jake" }
+    $scope.$watch('mydata.val', function(newval) {
+        $scope.mydata.toolong = newval.length > 15
 
-    $scope.myFunc = function() {
-        return myValue.val;
-    }; 
-})
+        $scope.myFunc = function() {
+            return myValue.val;
+        };
+    })
 })

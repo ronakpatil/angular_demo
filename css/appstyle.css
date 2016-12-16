@@ -1,8 +1,11 @@
-#view { 
-  width:auto;
+#view {
+    width: auto;
 }
 
+
 /*Slide-in*/
+
+
 /*#view.ng-enter,
 #view.ng-leave      { position:absolute; left:30px; right:30px;
     transition:1s all ease; -moz-transition:1s all ease; -webkit-transition:1s all ease; 
@@ -10,59 +13,66 @@
     
 #view.ng-enter            { 
     -webkit-animation:slideInRight 1s both ease;
-	-moz-animation:slideInRight 1s both ease;
-	animation:slideInRight 1s both ease; 
+  -moz-animation:slideInRight 1s both ease;
+  animation:slideInRight 1s both ease; 
 }
 
 #view.ng-leave            { 
     -webkit-animation:slideOutLeft 1s both ease;
-	-moz-animation:slideOutLeft 1s both ease;
-	animation:slideOutLeft 1s both ease;   
+  -moz-animation:slideOutLeft 1s both ease;
+  animation:slideOutLeft 1s both ease;   
 }
 
 @keyframes slideOutLeft {
-	to 		{ transform: translateX(-200%); }
+  to    { transform: translateX(-200%); }
 }
-@-moz-keyframes slideOutLeft {	
-	to 		{ -moz-transform: translateX(-200%); }
+@-moz-keyframes slideOutLeft {  
+  to    { -moz-transform: translateX(-200%); }
 }
 @-webkit-keyframes slideOutLeft {
-	to 		{ -webkit-transform: translateX(-200%); }
+  to    { -webkit-transform: translateX(-200%); }
 }
 
 @keyframes slideInRight {
-	from 	{ transform:translateX(200%); }
-	to 		{ transform: translateX(0); }
+  from  { transform:translateX(200%); }
+  to    { transform: translateX(0); }
 }
 @-moz-keyframes slideInRight {
-	from 	{ -moz-transform:translateX(200%); }
-	to 		{ -moz-transform: translateX(0); }
+  from  { -moz-transform:translateX(200%); }
+  to    { -moz-transform: translateX(0); }
 }
 @-webkit-keyframes slideInRight {
-	from 	{ -webkit-transform:translateX(200%); }
-	to 		{ -webkit-transform: translateX(0); }
+  from  { -webkit-transform:translateX(200%); }
+  to    { -webkit-transform: translateX(0); }
 }*/
 
+
 /*Fade-in animation*/
+
 #view {
-  transition: 1s linear all;
-  -webkit-transition: 1s linear all;
+    transition: 1s linear all;
+    -webkit-transition: 1s linear all;
 }
+
 #view.ng-enter {
-  opacity: 0;
-  transition: 1s linear;
+    opacity: 0;
+    transition: 1s linear;
 }
+
 #view.ng-enter.ng-enter-active {
-  opacity: 1;
+    opacity: 1;
 }
+
 #view.ng-leave {
-  opacity: 1;
+    opacity: 1;
 }
+
 #view.ng-leave.ng-leave-active {
-  opacity: 0;
+    opacity: 0;
 }
 
 // Scale
+
 /*#view {
   transition: 2s linear all;
   -webkit-transition: 2s linear all;
@@ -84,15 +94,19 @@
   opacity: 0;
 }*/
 
+
 /*h4 {
   position: absolute;
   bottom: 0;
 
 }*/
+
+
 /* Sidebar Script  */
 
 
 /* Swipe works with mouse as well but often causes text selection. */
+
 #demo-page * {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -100,20 +114,47 @@
     -o-user-select: none;
     user-select: none;
 }
+
+
 /* Arrow only buttons in the header. */
+
 #demo-page .ui-header .ui-btn {
     background: none;
     border: none;
     top: 9px;
 }
+
 #demo-page .ui-header .ui-btn-inner {
     border: none;
 }
+
+
 /* Content styling. */
-dl { font-family: "Times New Roman", Times, serif; padding: 1em; }
-dt { font-size: 2em; font-weight: bold; }
-dt span { font-size: .5em; color: #777; margin-left: .5em; }
-dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px solid #eee; }
-.back-btn { float: right; margin: 0 2em 1em 0; }
 
+dl {
+    font-family: "Times New Roman", Times, serif;
+    padding: 1em;
+}
 
+dt {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+dt span {
+    font-size: .5em;
+    color: #777;
+    margin-left: .5em;
+}
+
+dd {
+    font-size: 1.25em;
+    margin: 1em 0 0;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #eee;
+}
+
+.back-btn {
+    float: right;
+    margin: 0 2em 1em 0;
+}

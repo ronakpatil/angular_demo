@@ -1,19 +1,17 @@
 /*Table styles*/
 
-table{
+table {
     border-collapse: collapse;
     font-family: Arial;
 }
 
-td{
-     border: 1px solid black;
+td {
+    border: 1px solid black;
     padding: 5px
 }
 
-th{
+th {
     border: 1px solid black;
     padding: 5px;
     text-align: left;
 }
-
-

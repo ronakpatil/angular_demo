@@ -4,12 +4,10 @@
 
 
 // Factory name is StringService
-oneAppmod.factory("stringService", function () {
+oneAppmod.factory("stringService", function() {
     return {
-
         // ProcessString is function inside stringService
-
-        processString: function (input) {
+        processString: function(input) {
             if (!input) {
                 return input;
             }
