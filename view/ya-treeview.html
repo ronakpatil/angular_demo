@@ -1,0 +1,6 @@
+ <div class="container" ng-controller="yatreeviewController">
+      <div ya-treeview-breadcrumbs ya-context="context"></div>
+      <div ya-treeview ya-id="myTree" ya-model="model" ya-options="options" ya-context="context">
+          <span ng-class="{selected: context.selectedNodes.indexOf(node) > -1}">{{ node.$model.label }}</span>
+      </div>
+    </div>

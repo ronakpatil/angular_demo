@@ -1,0 +1,19 @@
+<!-- <div ui-tree>
+    <ol ui-tree-nodes ng-model="data">
+        <li ng-repeat="item in data" ui-tree-node>
+            {{item.title}}
+            <ol ui-tree-nodes ng-model="data.nodes">
+                <li ng-repeat="ti in data.nodes" ui-tree-node>
+                    {{ti.title}}
+                </li>
+            </ol>
+        </li>
+    </ol>
+</div> -->
+<div>
+    <i>Angular treeview</i>
+    <br/>
+    <div data-angular-treeview="true" data-tree-id="tree_identifier" data-tree-model="treedata" data-node-id="roleId" data-node-label="roleName" data-node-children="children">
+    </div>
+    <span><b>Selected node id:</b> {{tree_identifier.currentNode.roleId}}</span>
+</div>
