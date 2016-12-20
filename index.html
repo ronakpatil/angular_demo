@@ -20,6 +20,9 @@
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/bootstrap-theme.css" rel="stylesheet" />
     <link href="css/abn_tree.css" rel="stylesheet" />
+    <link href="css/ya-treeview.css" rel="stylesheet" />
+    <link href="css/angular.treeview.css" rel="stylesheet" />
+    <link href="bower_components/angular-ui-tree/dist/angular-ui-tree.min.css"  rel="stylesheet"/>
 </head>
 
 <body>
@@ -41,6 +44,9 @@
                 </li>
                 <li>
                     <a ui-sref="treeview">Tree view</a>
+                </li>
+                <li>
+                    <a ui-sref="autreeview">AU-Tree view</a>
                 </li>
                 <li>
                     <a ui-sref="service_factory_provider">Service, factory and provider</a>
@@ -123,6 +129,8 @@
     <script src="references/angular-animate.js"></script>
     <script src="references/angular-ui-router.js"></script>
     <script src="references/abn_tree_directive.js"></script>
+    <script src="references/angular.treeview.js"></script>
+    <script src="bower_components/angular-ui-tree/dist/angular-ui-tree.js"></script>
     <!-- <script src = "references/require.js"></script> -->
     <!-- <script src = "references/ocLazyload.js"></script> -->
     <script src="js/app.js"></script>
@@ -139,8 +147,10 @@
     <script src="js/scopeInsideDir.js"></script>
     <script src="js/transclude.js"></script>
     <script src="js/treeview.js"></script>
+    <script src="js/yatreeview.js"></script>
     <script src="js/bsform.js"></script>
     <script src="js/directives.js"></script>
+    <script src="js/autreeview.js"></script>
     <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
