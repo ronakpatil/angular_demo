@@ -19,7 +19,8 @@
     "grunt": "^1.0.1",
     "angular-mocks": "^1.5.8",
     "angular": "^1.5.8",
-    "bootstrap-ui-treeview": "^3.0.1"
+    "bootstrap-ui-treeview": "^3.0.1",
+    "ng-webworker": "^0.2.3"
   },
   "resolutions": {
     "angular": "1.5.8",

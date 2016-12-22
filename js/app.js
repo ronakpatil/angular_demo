@@ -2,7 +2,7 @@
  * Created by ronakp on 30-09-2016.
  */
 
-var oneAppmod = angular.module("oneAppmod", ['ui.router', 'ngAnimate', 'angularBootstrapNavTree', 'ui.tree','angularTreeview'])
+var oneAppmod = angular.module("oneAppmod", ['ui.router', 'ngAnimate', 'angularBootstrapNavTree', 'ui.tree', 'angularTreeview'])
     .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
         // $ocLazyLoadProvier.config({
@@ -101,6 +101,11 @@ var oneAppmod = angular.module("oneAppmod", ['ui.router', 'ngAnimate', 'angularB
                 url: "/autreeview",
                 templateUrl: "view/autreeview.html",
                 controller: "autreeviewController"
+            })
+            .state("webworker", {
+                url: "/webworker",
+                templateUrl: "view/webWorker.html",
+                //controller: "autreeviewController"
             })
             .state("home", {
                 url: "/home",

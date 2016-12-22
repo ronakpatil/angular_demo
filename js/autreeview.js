@@ -1,69 +1,69 @@
 oneAppmod.controller('autreeviewController', function($scope) {
     $scope.treedata = [{
-                "roleName": "India",
-                "roleId": "IN",
+            "roleName": "India",
+            "roleId": "IN",
+            "children": [{
+                "roleName": "Chennai",
+                "roleId": "CH",
+                "children": []
+            }, {
+                "roleName": "Maharashtra",
+                "roleId": "MH",
                 "children": [{
-                    "roleName": "Chennai",
-                    "roleId": "CH",
-                    "children": []
+                    "roleName": "Mumbai",
+                    "roleId": "MUM"
                 }, {
-                    "roleName": "Maharashtra",
-                    "roleId": "MH",
+                    "roleName": "Pune",
+                    "roleId": "PN",
                     "children": [{
-                        "roleName": "Mumbai",
-                        "roleId": "MUM"
+                        "roleName": "EON IT Park",
+                        "roleId": "EON",
+                        "children": []
                     }, {
-                        "roleName": "Pune",
-                        "roleId": "PN",
+                        "roleName": "Rajiv Gandhi Info Park",
+                        "roleId": "RINFO",
                         "children": [{
-                            "roleName": "EON IT Park",
-                            "roleId": "EON",
+                            "roleName": "Blueridge",
+                            "roleId": "BL",
                             "children": []
                         }, {
-                            "roleName": "Rajiv Gandhi Info Park",
-                            "roleId": "RINFO",
-                            "children": [{
-                                "roleName": "Blueridge",
-                                "roleId": "BL",
-                                "children": []
-                            }, {
-                                "roleName": "Quadran IT Park",
-                                "roleId": "QUAD",
-                                "children": []
-                            }]
+                            "roleName": "Quadran IT Park",
+                            "roleId": "QUAD",
+                            "children": []
                         }]
-                    }, {
-                        "roleName": "Nagpur",
-                        "roleId": "NGP"
                     }]
-                }]
-            }, {
-                "roleName": "Canada",
-                "roleId": "CN",
-                "children": []
-            },
-
-            {
-                "roleName": "Singapore",
-                "roleId": "SN",
-                "children": []
-            }, {
-                "roleName": "USA",
-                "roleId": "US",
-                "children": [{
-                    "roleName": "San Fransisco",
-                    "roleId": "SFA",
-                    "children": []
                 }, {
-                    "roleName": "Illinois",
-                    "roleId": "IL",
-                    "children": [{
-                        "roleName": "Chicago",
-                        "roleId": "CH"
-                    }]
+                    "roleName": "Nagpur",
+                    "roleId": "NGP"
                 }]
-            }
-        ];
+            }]
+        }, {
+            "roleName": "Canada",
+            "roleId": "CN",
+            "children": []
+        },
+
+        {
+            "roleName": "Singapore",
+            "roleId": "SN",
+            "children": []
+        }, {
+            "roleName": "USA",
+            "roleId": "US",
+            "children": [{
+                "roleName": "San Fransisco",
+                "roleId": "SFA",
+                "children": []
+            }, {
+                "roleName": "Illinois",
+                "roleId": "IL",
+                "children": [{
+                    "roleName": "Chicago",
+                    "roleId": "CH"
+                }]
+            }]
+        }
+    ];
 
     // $scope.data = [{
     //     'id': 1,
